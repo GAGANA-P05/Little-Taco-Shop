@@ -18,6 +18,5 @@
 This project helped me strengthen my understanding of HTML fundamentals, semantic structure, and form handling.
 
 # Future Improvements
-   - Add CSS styling
    - Implement JavaScript interactivity
    - Mobile responsiveness
