@@ -1,0 +1,326 @@
+/* --- Global Styles --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* --- Page Layout & Container --- */
+header,
+main,
+footer {
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+header {
+  background-color: #d35400; /* Warm pumpkin/terracotta color */
+  color: #ffffff;
+  text-align: center;
+  padding: 30px;
+  margin-top: 20px;
+  border-bottom: 5px solid #a04000; /* Darker accent */
+  border-radius: 10px 10px 0 0;
+}
+
+main {
+  padding: 30px;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  color: #777;
+  border-top: 1px solid #ddd;
+  border-radius: 0 0 10px 10px;
+}
+
+/* --- Header Elements --- */
+h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 10px 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: #a04000;
+}
+
+figure {
+  margin: 25px 0 0 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 4px solid #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+figcaption {
+  font-style: italic;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+/* --- Main Content Elements --- */
+hr {
+  border: 0;
+  height: 1px;
+  background-color: #ddd;
+  margin: 40px 0;
+}
+
+h3 {
+  font-size: 2rem;
+  color: #d35400;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 5px;
+}
+
+p {
+  margin-bottom: 15px;
+  font-size: 1.1rem; /* Slightly larger text for readability */
+}
+
+details {
+  background-color: #fdf5e6;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+summary {
+  font-weight: bold;
+  cursor: pointer;
+  color: #a04000;
+}
+
+summary:hover {
+  text-decoration: underline;
+}
+
+/* --- Menu Table Styling --- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border: 1px solid #e0e0e0;
+}
+
+thead th {
+  background-color: #d35400;
+  color: #ffffff;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+thead tr:last-child th {
+  background-color: #e67e22;
+  text-align: left;
+  font-size: 1rem;
+}
+
+tbody th {
+  background-color: #fdf5e6;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 1.1rem;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+tfoot td {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: #f0f0f0;
+}
+
+tfoot del {
+  color: #c0392b;
+  text-decoration-thickness: 2px;
+  margin-right: 5px;
+}
+
+tfoot ins {
+  color: #27ae60;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+/* --- (NEW) Store Hours List --- */
+dl {
+  font-size: 1.1rem;
+  margin-left: 20px;
+}
+
+dt {
+  font-weight: bold;
+  color: #a04000; /* Darker orange */
+  margin-top: 15px;
+  font-size: 1.2rem;
+}
+
+dd {
+  margin-left: 25px;
+}
+
+/* --- (NEW) Contact Form Styling --- */
+form {
+  margin-top: 20px;
+}
+
+fieldset {
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #fdf5e6; /* Warm beige, matches details box */
+}
+
+legend {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #a04000;
+  padding: 0 10px; /* Cuts into the fieldset border nicely */
+  margin-left: 10px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: inherit; /* Make sure it uses the body font */
+}
+
+textarea {
+  resize: vertical; /* Allow user to resize height only */
+  min-height: 120px;
+}
+
+button {
+  background-color: #d35400; /* Main theme color */
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button[type="reset"] {
+  background-color: #777; /* Gray for reset */
+}
+
+button:hover,
+button:focus {
+  background-color: #a04000; /* Darker orange */
+}
+
+button[type="reset"]:hover,
+button[type="reset"]:focus {
+  background-color: #555;
+}
+
+/* --- (NEW) Address Styling --- */
+address {
+  font-size: 1.1rem;
+  font-style: normal;
+  line-height: 1.7;
+  margin-top: 20px;
+}
+
+address a {
+  color: #d35400; /* Theme color for links */
+  text-decoration: none;
+}
+
+address a:hover {
+  text-decoration: underline;
+}
+
+/* --- Footer & Back to Top Link --- */
+main a[href="#"] {
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+  text-decoration: none;
+  color: #d35400;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+main a[href="#"]:hover {
+  text-decoration: underline;
+}
